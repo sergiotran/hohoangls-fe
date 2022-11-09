@@ -1,0 +1,15 @@
+@import '../../styles/vars';
+
+.left__side__nav {
+  height: 100%;
+  background-color: white;
+}
+
+.left__side__nav__menu {
+  border-right: none;
+  margin-top: .5rem;
+
+  li {
+    font-weight: bold;
+  }
+}

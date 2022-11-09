@@ -1,0 +1,10 @@
+@import "vars";
+
+body {
+  position: relative;
+  background-color: #f5f5f5!important;
+}
+
+html, body, #__next {
+  height: 100%;
+}

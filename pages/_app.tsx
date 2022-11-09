@@ -1,6 +1,11 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import { AppPropsWithLayout } from '@/common/layouts/types'
+import '@/styles/global.scss'
+import "antd/dist/antd.css"
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+const MyApp = ({ Component, pageProps }: AppPropsWithLayout) => {
+  const getLayout = Component.getLayout ?? ((page) => page);
+
+  return getLayout(<Component {...pageProps} />)
 }
+
+export default MyApp
